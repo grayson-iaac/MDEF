@@ -1,0 +1,884 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Sun Oct 29 2023 17:17:18 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="652ef09bf14f3838efaeb725" data-wf-site="652320eeeb3ca68e354e2716">
+<head>
+  <meta charset="utf-8">
+  <title>Week 3 | Grayson Fynn MDEF</title>
+  <meta content="Week 3 | Grayson Fynn MDEF" property="og:title">
+  <meta content="Week 3 | Grayson Fynn MDEF" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/grayson-iaac.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+</style>
+  <!--  You can remove this  -->
+  <meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+</style>
+    </div>
+    <div data-animation="default" class="navbar4_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="all" data-w-id="43afe3c5-7e8f-6bbb-12f6-c8f4b535f207" role="banner" data-duration="400" data-doc-height="1">
+      <div class="navbar4_container">
+        <a href="index.html" class="navbar4_logo-link w-nav-brand"><img src="images/mdef-logo.svg" loading="lazy" alt="" class="navbar4_logo"></a>
+        <div class="navbar4_wrapper">
+          <nav role="navigation" class="navbar4_menu w-nav-menu">
+            <div class="navbar4_menu-wrapper">
+              <div class="container-large _1">
+                <a href="#" class="navbar4_link w-nav-link">Weekly updates</a>
+              </div>
+            </div>
+          </nav>
+          <div class="navbar4_menu-button w-nav-button">
+            <div class="menu-icon4">
+              <div class="menu-icon4_wrapper">
+                <div class="menu-icon4_line-top"></div>
+                <div class="menu-icon4_line-middle">
+                  <div class="menu-icon_line-middle-top"></div>
+                  <div class="menu-icon_line-middle-base"></div>
+                </div>
+                <div class="menu-icon4_line-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <header class="section_header44">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-medium">
+              <div class="w-layout-grid block-copy">
+                <div id="w-node-_5a1caa10-a31a-d1f6-7d34-d8632e3dfb63-efaeb725" data-w-id="5a1caa10-a31a-d1f6-7d34-d8632e3dfb63" style="opacity:0" class="margin-bottom margin-small">
+                  <h1>Week 3</h1>
+                  <div class="subheader">16-22 Oct, 2023</div>
+                </div>
+                <div class="div-block-6">
+                  <div class="html-embed w-embed w-iframe">
+                    <div class="sketchfab-embed-wrapper">
+                      <iframe style="width:100%; height:30rem;" title="LIFEX MODEL" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/08612964146242d88ae1c344fdd2f36b/embed">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div></header>
+      <div class="section_layout405">
+        <div class="padding-global">
+          <div class="container-large">
+            <div>
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="layout405_component w-tabs">
+                <div class="layout405_tabs-menu no-scrollbar w-tab-menu">
+                  <a data-w-tab="Tab 1" class="layout405_tab-link w-inline-block w-tab-link w--current">
+                    <div><span>Week 3 - Machine Paradox</span></div>
+                  </a>
+                </div>
+                <div class="layout405_tabs-content w-tab-content">
+                  <div data-w-tab="Tab 1" class="layout405_tab-pane w-tab-pane w--tab-active">
+                    <section class="section_content7">
+                      <div class="padding-global">
+                        <div class="container-small">
+                          <div class="padding-section-large _1">
+                            <div class="content7_component">
+                              <div class="margin-bottom margin-small">
+                                <h2 id="w-node-_93102ac1-8e0f-652a-5668-24d9d3e88a53-efaeb725"><strong>Forensic Report: FundacioCIM 3D Printer</strong></h2>
+                              </div>
+                              <div class="margin-bottom margin-small">
+                                <div class="w-layout-grid grid-2">
+                                  <div id="w-node-_32ff5550-999f-78e7-9e28-38591a9dc64b-efaeb725" class="div-block-5">
+                                    <h3><strong>Identity of the reporting agency</strong></h3>
+                                  </div>
+                                  <div id="w-node-_25f67ec8-cfea-d8b6-aa41-27752a9fba0e-efaeb725" class="div-block-5">
+                                    <h3><strong>MDEF</strong></h3>
+                                  </div>
+                                  <div id="w-node-_840932fd-42f5-c964-37f0-afddbe6c5dee-efaeb725" class="div-block-5">
+                                    <p><strong>Case identifier</strong></p>
+                                  </div>
+                                  <div id="w-node-_2e5b4969-bd74-4690-034f-83471fc9f981-efaeb725" class="div-block-5">
+                                    <p>Forensics of the Obsolescence</p>
+                                  </div>
+                                  <div id="w-node-_80b08a9f-436b-6990-a3ea-afae3e3b51fc-efaeb725" class="div-block-5">
+                                    <p><strong>Identity of the submitter</strong></p>
+                                  </div>
+                                  <div id="w-node-_76d6fd16-30e7-64e8-366b-ebe518167698-efaeb725" class="div-block-5">
+                                    <p>Albert Vila Bonfill/ Anna Fedele/ Dhrishya Ramadass/ Mihnea Nicolae Patrascu/ Nicolo Baldi/ Qianyin Du</p>
+                                  </div>
+                                  <div id="w-node-b34cdfe0-700c-920f-e841-d1660a4aa0a4-efaeb725" class="div-block-5">
+                                    <p><strong>Date of receipt</strong></p>
+                                  </div>
+                                  <div id="w-node-_427bb498-87df-2d78-d3a1-865ce9d3285c-efaeb725" class="div-block-5">
+                                    <p>17/10/2023</p>
+                                  </div>
+                                  <div id="w-node-_07d7cebd-84b1-bc77-2439-d52c89c91ba9-efaeb725" class="div-block-5">
+                                    <p><strong>Date of report</strong></p>
+                                  </div>
+                                  <div id="w-node-_45c9fe60-cd29-1ed1-a5b8-f937c4c973f6-efaeb725" class="div-block-5">
+                                    <p>17/10/2023</p>
+                                  </div>
+                                  <div id="w-node-_059782f2-04dd-e6f1-094b-56875ea80214-efaeb725" class="div-block-5">
+                                    <p><strong>Identity and signature of the examiner</strong></p>
+                                  </div>
+                                  <div id="w-node-aab045f3-0e69-1ed3-e0f3-59ed3f36ad0f-efaeb725" class="div-block-5">
+                                    <p>Albert , Anna, Dhrishya, Mihnea, Nicolo, Qianyin</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="observation-box">
+                              <h3>Examination</h3>
+                              <div class="rich-text-block w-richtext">
+                                <p><strong>Serial number</strong>: 01 150929 1189</p>
+                                <p><strong>Brand</strong>: FUNDACIOCIM<br><strong>Model: </strong>BCN3D+</p>
+                                <p><strong>Year</strong>: 2015</p>
+                                <p><strong>Weight</strong>: 11,6 kg</p>
+                                <p><strong>Colour</strong>: BLACK/BLUE</p>
+                                <p><strong>Made in</strong>: SPAIN</p>
+                              </div>
+                            </div>
+                            <div class="text-rich-text _1 w-richtext">
+                              <figure style="max-width:4032px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img loading="lazy" src="images/IMG_1473.JPG" alt=""></div>
+                                <figcaption>Abandoned 3D Printer</figcaption>
+                              </figure>
+                            </div>
+                            <div class="observation-box">
+                              <h3>Forensic Questions</h3>
+                              <div class="rich-text-block w-richtext">
+                                <p><strong>What does it do?</strong>‍</p>
+                                <p>A 3D printer is a device that creates three-dimensional objects by layering material based on a digital design. Using a computer-aided design (CAD) model as a blueprint, the printer adds material layer by layer, whether it&#x27;s thermoplastic, resin, or metal, to form a solid object. Different printing technologies, such as Fused Deposition Modeling (FDM), Stereolithography (SLA), or Selective Laser Sintering (SLS), dictate the type of material and the layering process, resulting in a tangible product that mirrors the digital design.</p>
+                                <p>‍</p>
+                                <p><strong>How does it work?</strong></p>
+                                <p>The 3D printer works by interpreting a digital 3D model, slicing it into thin horizontal layers using specialized software, and then building the object layer by layer through additive manufacturing. Depending on the technology used, the printer deposits material, such as thermoplastic filament, liquid resin, or metal powder, layer by layer, with each layer fusing to the one below. The material is solidified using various methods like heating, UV curing, or laser sintering, resulting in a three-dimensional object that matches the digital design.</p>
+                                <p>‍</p>
+                                <p><strong>How is it built?</strong></p>
+                                <p>The 3D printer is constructed using a combination of mechanical, electronic, and software components. Mechanically, it features a frame that houses the moving parts, including the print head or extruder, and a build platform. These components are driven by motors, guided by linear rails or rods, ensuring precise movements on the X, Y, and Z axes. Electronically, a main control board processes digital instructions from the slicing software, directing the motors and regulating the temperature of the print head or curing source. Additionally, various sensors monitor conditions like temperature and filament presence, while the software interface allows users to configure settings, load models, and initiate the printing process.</p>
+                                <p>‍</p>
+                                <p><strong>Why it failed, or it wasn’t used anymore?</strong></p>
+                                <p>The 3D printer still functions, but it&#x27;s an older, unstable model with low accuracy and print quality.</p>
+                              </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="observation-box">
+                              <h3>Steps taken</h3>
+                              <div class="rich-text-block w-richtext">
+                                <ol start="1" role="list">
+                                  <li>Cleaned the dust off the printer and brought it to the MDEF room</li>
+                                  <li>Disassembled using our toolbox</li>
+                                  <li>Separated into three main parts as follows:</li>
+                                </ol>
+                                <ul role="list">
+                                  <li><strong>The plate - </strong>Horizontal surface that also gets heated and can be moved in all directions and where the plastic is printed on;</li>
+                                  <li><strong>The structural par</strong>t - The part that supports the entire printing machine;</li>
+                                  <li><strong>The extruder</strong> - Contains the motors to print 3D filament;</li>
+                                </ul>
+                                <ol start="4" role="list">
+                                  <li>Laid out all parts individually and documented.</li>
+                                </ol>
+                              </div>
+                            </div>
+                            <div class="text-rich-text _1 w-richtext">
+                              <figure style="max-width:270pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img loading="lazy" src="images/ezgif.com-optimize-1.gif" alt=""></div>
+                                <figcaption>Disassembling timelapse</figcaption>
+                              </figure>
+                              <figure style="max-width:1985pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                                <div><img loading="lazy" src="images/Group-6.webp" alt=""></div>
+                                <figcaption>Three main parts of the printer</figcaption>
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <section class="section_gallery10">
+                        <div class="padding-global">
+                          <div class="container-large">
+                            <div class="padding-section-large-3">
+                              <div class="margin-bottom margin-xxlarge">
+                                <div class="text-align-center">
+                                  <div class="max-width-large align-center">
+                                    <div class="margin-bottom margin-small">
+                                      <h2>Image Gallery </h2>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="gallery10_component">
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/Small-parts-p-500.jpg 500w, images/Small-parts-p-800.jpg 800w, images/Small-parts.JPG 960w" alt="" src="images/Small-parts.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1c92c56eb05ff8040e7",
+      "origFileName": "Small parts.JPG",
+      "fileName": "Small parts.JPG",
+      "fileSize": 108541,
+      "height": 720,
+      "url": "images/Small-parts.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/Monitor-p-500.jpg 500w, images/Monitor-p-800.jpg 800w, images/Monitor.JPG 960w" alt="" src="images/Monitor.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1c4afaa8e05328a206a",
+      "origFileName": "Monitor.JPG",
+      "fileName": "Monitor.JPG",
+      "fileSize": 65447,
+      "height": 720,
+      "url": "images/Monitor.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/ZAxis-partial.JPG 500w, images/ZAxis-partial.JPG 800w, images/ZAxis-partial.JPG 960w" alt="" src="images/ZAxis-partial.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f0f3ca92fcfa20a99bf0",
+      "origFileName": "ZAxis-partial.JPG",
+      "fileName": "ZAxis-partial.JPG",
+      "fileSize": 52699,
+      "height": 720,
+      "url": "images/ZAxis-partial.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/Extruder-mechanism-p-500.jpg 500w, images/Extruder-mechanism-p-800.jpg 800w, images/Extruder-mechanism.JPG 960w" alt="" src="images/Extruder-mechanism.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1c09d7661968889354a",
+      "origFileName": "Extruder-mechanism.JPG",
+      "fileName": "Extruder-mechanism.JPG",
+      "fileSize": 62897,
+      "height": 720,
+      "url": "images/Extruder-mechanism.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/All-parts-p-500.jpg 500w, images/All-parts-p-800.jpg 800w, images/All-parts.JPG 960w" alt="" src="images/All-parts.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1b8d020838c13851277",
+      "origFileName": "All parts.JPG",
+      "fileName": "All parts.JPG",
+      "fileSize": 94171,
+      "height": 720,
+      "url": "images/All-parts.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/Boards-p-500.jpg 500w, images/Boards-p-800.jpg 800w, images/Boards.JPG 960w" alt="" src="images/Boards.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1beb635b01d68b045a7",
+      "origFileName": "Boards.JPG",
+      "fileName": "Boards.JPG",
+      "fileSize": 59224,
+      "height": 720,
+      "url": "images/Boards.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                                <a href="#" class="gallery10_lightbox-link w-inline-block w-lightbox"><img sizes="(max-width: 767px) 81vw, 25vw" srcset="images/3D-printed-pards-p-500.jpg 500w, images/3D-printed-pards-p-800.jpg 800w, images/3D-printed-pards.JPG 960w" alt="" src="images/3D-printed-pards.JPG" loading="lazy" class="gallery10_image">
+                                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6530f1b5afaa8e05328a1167",
+      "origFileName": "3D printed pards.JPG",
+      "fileName": "3D printed pards.JPG",
+      "fileSize": 77614,
+      "height": 720,
+      "url": "images/3D-printed-pards.JPG",
+      "width": 960,
+      "type": "image"
+    }
+  ],
+  "group": "3"
+}</script>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section data-w-id="b2ec4318-3bbb-51c4-67f9-94170b7180a5" class="section_gallery24">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-top padding-xhuge _1">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="margin-bottom margin-small">
+                    <h2>How it came together</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery24_component">
+          <div class="gallery24_horizontal-scroll-wrapper">
+            <div class="gallery24_horizontal-scroll-content">
+              <a href="#" id="w-node-b2ec4318-3bbb-51c4-67f9-94170b7180b3-efaeb725" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-1.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-1-p-500.png 500w, images/Artboard-1-p-800.png 800w, images/Artboard-1.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-2.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-2-p-500.png 500w, images/Artboard-2-p-800.png 800w, images/Artboard-2.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-3.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-3-p-500.png 500w, images/Artboard-3-p-800.png 800w, images/Artboard-3.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-4.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-4-p-500.png 500w, images/Artboard-4-p-800.png 800w, images/Artboard-4.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-5.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-5-p-500.png 500w, images/Artboard-5-p-800.png 800w, images/Artboard-5.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-6.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-6-p-500.png 500w, images/Artboard-6-p-800.png 800w, images/Artboard-6.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-7.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-7-p-500.png 500w, images/Artboard-7-p-800.png 800w, images/Artboard-7.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-8.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-8-p-500.png 500w, images/Artboard-8-p-800.png 800w, images/Artboard-8.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-9.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-9-p-500.png 500w, images/Artboard-9-p-800.png 800w, images/Artboard-9.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-10.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-10-p-500.png 500w, images/Artboard-10-p-800.png 800w, images/Artboard-10.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-11.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-11-p-500.png 500w, images/Artboard-11-p-800.png 800w, images/Artboard-11.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-12.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-12-p-500.png 500w, images/Artboard-12-p-800.png 800w, images/Artboard-12.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-13.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-13-p-500.png 500w, images/Artboard-13-p-800.png 800w, images/Artboard-13.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-14.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-14-p-500.png 500w, images/Artboard-14-p-800.png 800w, images/Artboard-14.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-15.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-15-p-500.png 500w, images/Artboard-15-p-800.png 800w, images/Artboard-15.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-16.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-16-p-500.png 500w, images/Artboard-16-p-800.png 800w, images/Artboard-16.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-17.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-17-p-500.png 500w, images/Artboard-17-p-800.png 800w, images/Artboard-17.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-18.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-18-p-500.png 500w, images/Artboard-18-p-800.png 800w, images/Artboard-18.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-19.png" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-19-p-500.png 500w, images/Artboard-19-p-800.png 800w, images/Artboard-19.png 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-20.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-20-p-500.png 500w, images/Artboard-20-p-800.png 800w, images/Artboard-20.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-21.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-21-p-500.png 500w, images/Artboard-21.webp 597w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-22.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-22-p-500.png 500w, images/Artboard-22-p-800.png 800w, images/Artboard-22.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-23.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-23-p-500.png 500w, images/Artboard-23-p-800.png 800w, images/Artboard-23.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-24.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-24-p-500.png 500w, images/Artboard-24.webp 596w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-25.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-25-p-500.png 500w, images/Artboard-25.webp 596w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+              <a href="#" class="gallery24_lightbox-link w-inline-block w-lightbox">
+                <div class="gallery24_image-wrapper"><img src="images/Artboard-26.webp" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 27vw, 80vw" srcset="images/Artboard-26-p-500.png 500w, images/Artboard-26-p-800.png 800w, images/Artboard-26.webp 842w" alt="" class="gallery24_image"></div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-small">
+        <div class="text-rich-text w-richtext">
+          <h2>Powering things up</h2>
+          <p>‍</p>
+          <p>After the disassembly process, we meticulously examined each individual component. Utilizing a precision lab power supply and a high-resolution multimeter, we conducted comprehensive tests to determine the optimal voltage required for each component&#x27;s functionality.</p>
+          <p>‍</p>
+          <figure style="max-width:4032px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/PXL_20231018_091009223.MP.jpg" loading="lazy" alt=""></div>
+            <figcaption>DC Lab Power Supply - How we brought individual 3D Printer components back to life</figcaption>
+          </figure>
+          <figure style="max-width:4032px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/PXL_20231018_091535489.MP.jpg" loading="lazy" alt=""></div>
+            <figcaption>The supply powering the printer hot plate</figcaption>
+          </figure>
+          <figure style="max-width:4032px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/PXL_20231018_091919504.MP-1.jpg" loading="lazy" alt=""></div>
+            <figcaption>We monitored the temperature of the hot plate while gradually increasing the voltage</figcaption>
+          </figure>
+          <p>‍</p>
+          <figure style="max-width:" class="w-richtext-align-center w-richtext-figure-type-image">
+            <div><img src="images/IMG_4723.JPG" loading="lazy" alt=""></div>
+            <figcaption>Connecting the power-supply to the extruder</figcaption>
+          </figure>
+          <figure style="max-width:600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/monitor.gif" loading="lazy" alt=""></div>
+            <figcaption>The printer monitor displaying again after a very long rest</figcaption>
+          </figure>
+          <figure style="max-width:600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/2.gif" loading="lazy" alt=""></div>
+            <figcaption>Powering the printer nozzle</figcaption>
+          </figure>
+          <figure style="max-width:600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <div><img src="images/filament-gif.gif" loading="lazy" alt=""></div>
+            <figcaption>Extruder melting filament</figcaption>
+          </figure>
+        </div>
+        <div class="container-small">
+          <div class="observation-box">
+            <h3>Results</h3>
+            <div class="rich-text-block w-richtext">
+              <p><strong>How many motors did we find inside?</strong></p>
+              <p>Five motors - they are used to move the extruder in the three axis to permit drawing in 3D space.</p>
+              <p>‍</p>
+              <p><strong>Does it contain a computer or microcontroller?</strong></p>
+              <p>Yes, an Arduino board and a RAMPS. </p>
+              <p>‍</p>
+              <p><strong>Did you found any sensors?</strong></p>
+              <p>Yes, temperature sensors.</p>
+            </div>
+          </div>
+          <div class="observation-box">
+            <h3>Conclusions</h3>
+            <div class="rich-text-block w-richtext">
+              <p><strong>What did you learn?</strong></p>
+              <ul role="list">
+                <li>How a 3D printer is assembled </li>
+                <li>How a 3D printer works</li>
+                <li>How to power up each component individually</li>
+                <li>Fundamental electronics</li>
+                <li>How a step motor works</li>
+              </ul>
+              <p>‍</p>
+              <p><strong>What surprised you?</strong></p>
+              <ul role="list">
+                <li>The number of components, screws and pieces the printer had</li>
+                <li>The fact that we can make the extruder work with just 3 components</li>
+                <li>How easy and repareable it is</li>
+                <li>How much the 3D technology has improved since 2015</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="margin-top margin-large">
+          <h2>(Almost Useful) Machines</h2>
+        </div>
+        <div class="margin-top margin-large">
+          <div class="text-rich-text w-richtext">
+            <p>In Week 2 of the &#x27;Machine Paradox&#x27; phase, we took our achievements from Week 1 to the next level. While the initial week was dedicated to disassembling and testing individual components, this week presented us with a unique challenge: to innovate and craft a new product using parts extracted from the printer. An intriguing twist to this assignment was the directive to design the machine to be as whimsical and non-functional as possible. This encouraged us to let our creativity run wild and embrace a playful approach.</p>
+            <p>‍</p>
+            <p>Even with a treasure trove of components at our disposal from the 3D printer—including two motors, an extruder, and more—we embraced an audacious and captivating concept: the LifeX, a so-called &#x27;life expectancy predictor&#x27;.</p>
+            <p>‍</p>
+            <blockquote>At its core, LifeX uses the X-axis motor and belt system. With a simple push of a button, a pen draws a line on a paper below, supposedly predicting the age at which the user will pass away. It&#x27;s a tongue-in-cheek nod to the dubious claims of some fortune tellers. In truth, an Arduino board is programmed to halt at a random number, influenced by the moment the user activates it.</blockquote>
+            <p>‍</p>
+            <figure style="max-width:1920pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/1.png" loading="lazy" alt=""></div>
+              <figcaption>Enter LifeX</figcaption>
+            </figure>
+            <p>Yet again, we&#x27;ve transformed an obsolete 3D printer into an entertaining, albeit purposefully impractical, creation.</p>
+            <p>‍</p>
+            <figure style="max-width:1026pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/Screenshot-2023-10-29-173654.png" loading="lazy" alt=""></div>
+              <figcaption>System diagram</figcaption>
+            </figure>
+            <p>‍</p>
+            <p>The motor maneuvers the pen across what we playfully dub your &#x27;life bookmark&#x27;, a creation thoughtfully crafted by one of our talented team members. This ticket, more than just a whimsical prediction, serves as a keepsake from this pseudo-paranormal encounter. Hold onto it and cherish the memory of this unique experience!</p>
+            <figure style="max-width:600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/ezgif.com-optimize.gif" loading="lazy" alt=""></div>
+              <figcaption>Pen draws on the paper your life expectancy</figcaption>
+            </figure>
+            <figure style="max-width:30%px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/Copy-of-front.jpg" loading="lazy" alt=""></div>
+              <figcaption>Your bookmark</figcaption>
+            </figure>
+            <p>We were privileged to be part of a diverse team, boasting a rich tapestry of skills from varied backgrounds. This multidisciplinary blend, from engineering acumen to artistic flair, was instrumental in propelling our project to completion. It was this collective genius that birthed such a unique and delightful machine.</p>
+            <p>‍</p>
+            <p>One of the most captivating stages of our journey was the decision-making process regarding which parts to repurpose from the printer and what additional elements we would introduce. We strategically utilized only essential components, complementing them with bespoke pieces crafted through 3D printing, CNC, and laser techniques—thanks to the advanced digital fabrication facilities available at our school.</p>
+            <p>‍</p>
+            <figure style="max-width:1920pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/6.png" loading="lazy" alt=""></div>
+              <figcaption>What we used</figcaption>
+            </figure>
+            <figure style="max-width:1920pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/7.png" loading="lazy" alt=""></div>
+              <figcaption>What we made</figcaption>
+            </figure>
+            <p>After assembling all the components, we captured the magic on camera within an impromptu lighting studio set up right in our classroom. Without further ado, check out the video below.</p>
+            <p>‍</p>
+            <figure style="padding-bottom:56.33802816901409%" class="w-richtext-align-fullwidth w-richtext-figure-type-video">
+              <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://player.vimeo.com/video/878611346" title="MASTER"></iframe></div>
+            </figure>
+            <p>Finally, this project wasn&#x27;t just about creating a unique machine; it was a journey of growth and discovery for each of us. The challenges we faced and the decisions we made along the way provided invaluable lessons. We learned the power of collaboration, the importance of diverse perspectives, and the resilience needed to transform an abstract idea into a tangible reality. As we reflect on our time together, it&#x27;s evident that we&#x27;ve not only honed our technical skills but also deepened our understanding of teamwork and innovation. This experience has enriched us, and we&#x27;re excited to carry these lessons forward in our future endeavors.</p>
+            <p>‍</p>
+            <figure style="max-width:1920px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+              <div><img src="images/10.png" loading="lazy" alt=""></div>
+              <figcaption>The end</figcaption>
+            </figure>
+            <p>‍</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer7_component">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-vertical padding-xxlarge">
+            <div class="padding-bottom padding-xxlarge _1">
+              <div class="footer7_top-wrapper">
+                <a href="#" id="w-node-_0b842f32-36bb-cb2f-de79-f13d34b88780-34b8877a" class="footer7_logo-link w-nav-brand"><img src="images/mdef-logo.svg" loading="lazy" alt=""></a>
+              </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="padding-top padding-medium">
+              <div class="footer7_bottom-wrapper">
+                <div class="footer7_credit-text">© 2023 MDEF. All rights reserved.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=652320eeeb3ca68e354e2716" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
